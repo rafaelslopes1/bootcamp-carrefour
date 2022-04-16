@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Teste com jQuery</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <style>
+        .draggable {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            padding: auto;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $(".draggable").draggable();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="draggable ui-widget-content">
+        <p>Eu me remexo muito</p>
+    </div>
+</body>
+
+</html>

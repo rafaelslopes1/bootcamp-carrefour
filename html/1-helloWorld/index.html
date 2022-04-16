@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <!-- 
+        <link rel="shortcut icon" href="./favicon/sun.ico" type="image/x-icon" />
+    -->
+    <title>Meu primeiro site em HTML</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style type="text/css">
+        .linha {
+            font-weight: bold;
+            color: green;
+            padding-left: 10px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <script type "text/javascript">
+        $(document).ready(() => {alert('Woohoo!')})
+
+        for (i = 0; i < 10; i++) {
+            const linhaStr = `<span class="linha">Linha número ${i}</span><br/>`
+            document.write(linhaStr);
+        }
+    </script>
+</body>
+
+</html>
